@@ -1,0 +1,9 @@
+- name: variable
+  host: localhost
+  vars_files:
+  - varaibles.yaml
+  tasks:
+  -  name: check variable
+     course: "Devops"
+     ansible.builtin.debug:
+     msg: "{{course}}"
