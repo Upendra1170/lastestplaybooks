@@ -1,0 +1,10 @@
+- name: variable for play1
+  host: localhost
+  vars:
+    course: "upendra"
+  tasks:
+  - name: check variable
+    vars:
+      course: "Devops"
+      ansible.builtin.debug:
+      msg: "{{course}}"
