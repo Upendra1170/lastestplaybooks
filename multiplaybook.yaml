@@ -1,0 +1,7 @@
+- name: play1
+  host: localhost
+  become: yes
+  tasks:
+  - name: p1 and pay2
+    ansible.builtin.debug:
+      msg: "hello p1 and p2"
