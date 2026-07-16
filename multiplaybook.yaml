@@ -1,7 +1,13 @@
 - name: play1
   host: localhost
-  become: yes
   tasks:
   - name: p1 and pay2
     ansible.builtin.debug:
       msg: "hello p1 and p2"
+
+- name: play2
+  host: localhost
+  tasks:
+  - name: p2 and pay1
+    ansible.builtin.debug:
+      msg: "hello p1 and p2"     
