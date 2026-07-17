@@ -1,0 +1,26 @@
+- name: checking the datatype
+  host: localhost
+  vars:
+  Name: upendra
+  skills:
+  - Devops
+  - shell
+  - ansible
+  experience:
+   Devops: 4
+   aws: 4
+  Traner: true
+  tasks:
+  - name: print key value pair
+    anisble.builtin.debug:
+      msg: "name is: {{name}}"
+  tasks:
+  - name: print list
+    anisble.builtin.debug:
+      msg: "skill is: {{skills}}"
+
+  tasks:
+  - name: print map
+    anisble.builtin.debug:
+      msg: "experience is: {{experience}}"
+    

@@ -1,0 +1,10 @@
+- name: variable for play1
+  host: localhost
+  vars:
+    person: "upendra with play1"
+  tasks:
+  - name: check variable
+    vars:
+      person: "upendra with play1"
+      ansible.builtin.debug:
+      msg: "{{play}}"
