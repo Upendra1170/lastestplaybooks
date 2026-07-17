@@ -9,3 +9,8 @@
     - name: print value
       ansible.builtin.debug:
         msg: "user is: {{ output.stdout }}"
+
+    - name: create user
+      ansible.builtin.user:
+        name: roboshop
+      when: output.stdout != 0    
