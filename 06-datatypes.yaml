@@ -1,5 +1,5 @@
 - name: checking the datatype
-  host: localhost
+  host: web
   vars:
   Name: upendra
   skills:
