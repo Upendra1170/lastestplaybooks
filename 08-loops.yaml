@@ -3,7 +3,7 @@
   tasks:
     - name: print packages
       ansible.builtin.package:
-        name: "hello is: {{ item }}"
+        name: "package: {{ item }}"
         state: present
       loop:
         - git 
