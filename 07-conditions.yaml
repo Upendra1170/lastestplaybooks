@@ -1,0 +1,11 @@
+- name: condition
+  hosts: localhost
+  tasks:
+    - name: check the condition
+      ansible.builtin.command:
+        cmd: whoami
+      register: output
+
+    - name: print value
+      ansible.builtin.debug:
+        msg: "user is: {{ output.stdout }}"
