@@ -7,5 +7,5 @@
         name: "{{ item }}"
         state: present
       loop:
-        - {name: git, State: 'present'}
+        - {name: git, state: 'present'}
         - {name: mysql, state: 'absent'}
